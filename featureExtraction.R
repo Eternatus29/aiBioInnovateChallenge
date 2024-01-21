@@ -6,8 +6,6 @@ nonMP <- fa.read(file = "nonMP.fasta")
 
 matMoonLight<-AAKpartComposition(seqs=moonlight,k=5,normalized=FALSE)
 matNonMP<-AAKpartComposition(seqs=nonMP,k=5,normalized=FALSE)
-matMoonLightAAutocor<-AAKpartComposition(seqs=moonlight,k=5,normalized=FALSE)
 
 write.csv(matMoonLight, "MoonLight.csv")
 write.csv(matNonMP, "NonMoonLight.csv")
-write.csv(matMoonLightAAutocor, "MoonLightAAutocor.csv")
